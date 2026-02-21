@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TerraSpectra Prospectivity Platform™</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+<nav>
+  <div class="logo">TerraSpectra™</div>
+  <div class="nav-links">
+    <a href="#map">Live Model</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <h1>AI-Driven Geological Prospectivity Intelligence</h1>
+  <p>Data fusion. Spectral intelligence. Predictive targeting.</p>
+  <a href="#map" class="btn">Explore Prospectivity</a>
+</header>
+
+<section id="map">
+  <h2>Interactive Prospectivity Heatmap</h2>
+
+  <div class="controls">
+    <button onclick="showGold()">Gold</button>
+    <button onclick="showCopper()">Copper</button>
+    <button onclick="showREE()">Rare Earths</button>
+  </div>
+
+  <div id="mapContainer"></div>
+</section>
+
+<section id="dashboard">
+  <h2>Exploration Intelligence Dashboard</h2>
+  <div class="stats">
+    <div class="stat">
+      <h3 id="score">0%</h3>
+      <p>Max Prospectivity Score</p>
+    </div>
+
+    <div class="stat">
+      <h3 id="targets">0</h3>
+      <p>High-Value Targets</p>
+    </div>
+
+    <div class="stat">
+      <h3>AI v2.4</h3>
+      <p>Model Engine</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Request Strategic Access</h2>
+  <p>Email: info@terraspectra.ai</p>
+</section>
+
+<footer>
+© 2026 TerraSpectra Prospectivity Platform™
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
